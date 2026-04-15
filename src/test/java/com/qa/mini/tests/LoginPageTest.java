@@ -13,7 +13,7 @@ public class LoginPageTest extends BaseTest {
 		Assert.assertEquals(title, Constants.LOGIN_PAGE_TITLE);
 	}
 
-	@Test
+	@Test(enabled = true)
 	public void loginPageURLTest() {
 		Assert.assertTrue(loginPage.getLoginPageurl().contains(Constants.LOGIN_PAGE_URL_FRACTION));
 	}
