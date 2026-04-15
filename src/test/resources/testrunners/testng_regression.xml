@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Beta Regression Test Suite"
+	thread-count="4"
+	parallel="tests"
+	verbose="4">
+
+	<listeners>
+		<!--<listener
+			class-name="com.qa.mimi.listners.AnnotationTransformer" /> -->
+
+		<listener
+			class-name="com.qa.mimi.listners.ExtentReportListener" />
+	</listeners>
+	
+	<test name="Login Page Test">
+		<classes>
+			<class name="com.qa.mini.tests.LoginPageTest" />
+		</classes>
+	</test>
+
+	<!-- <test name="Account Page Test">
+		<classes>
+			<class name="com.qa.mini.tests.AccountPageTest" />
+		</classes>
+	</test>
+	<test name="Product Info Page Test">
+		<classes>
+			<class name="com.qa.mini.tests.ProductInfoTest" />
+		</classes>
+	</test>-->
+
+</suite>
