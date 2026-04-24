@@ -7,8 +7,8 @@
 	verbose="4">
 
 	<listeners>
-		<!--<listener
-			class-name="com.qa.mimi.listners.AnnotationTransformer" /> -->
+		<listener
+			class-name="com.qa.mimi.listners.AnnotationTransformer" /> 
 
 		<listener
 			class-name="com.qa.mimi.listners.ExtentReportListener" />
